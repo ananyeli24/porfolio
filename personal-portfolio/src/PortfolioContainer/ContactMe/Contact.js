@@ -3,19 +3,22 @@ import './Contact.css'
 import emailjs from "emailjs-com";
 
 export const Contact = () => {
-  const form = useRef();
+ 
 
-  const sendEmail = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_eb2x2so', form.current, 'lcCv-O-asovJsiE34')
+    emailjs.sendForm('service_sepub6i', 'template_eb2x2so', e.target, 'lcCv-O-asovJsiE34')
       .then((result) => {
+        alert("Message sent sucessfully!")
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
+          alert("Email service is temporally down, you can contact me directly at ananyeli01@gmail.com")
       });
       e.target.reset()
   };
+
   
   return (
     <section id="contact" className="contact-container">
@@ -35,20 +38,20 @@ export const Contact = () => {
    </div>
    
      
-   <form className="contact-sub-container"> 
+   <form className="contact-sub-container" onSubmit={sendEmail}> 
     <div>
     <labe>Full Name * :</labe>
-    <input type="text" className="inputs" placeholder="Elvin Brown"/>
+    <input type="text" className="inputs" placeholder="Elvin Brown" name="user_name"/>
     </div>
 
     <div>
     <label>Number * :</label>
-    <input type="text" className="inputs" placeholder="444-444-4444"/> 
+    <input type="text" className="inputs" placeholder="444-444-4444" name="phone"/> 
     </div>
 
     <div>
       <label for="mail">Email * :</label>
-      <input type="email" className="inputs" placeholder="elvinb@gmail.com"/>
+      <input type="email" className="inputs" placeholder="elvinb@gmail.com" name="email"/>
     </div>
 
     <div className="message-container">

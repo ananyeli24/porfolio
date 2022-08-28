@@ -13,7 +13,7 @@ export const NavBar = () => {
       document.body.classList.remove("dark-theme");
     }
   }
-  const [toggleVisibility, setToggleVisibility] = useState(false);
+  const [toggleVisibility, setToggleVisibility] = useState(true);
 
   const toggleMenu = () => {
     toggleVisibility ? setToggleVisibility(false) : setToggleVisibility(true);
@@ -47,7 +47,7 @@ export const NavBar = () => {
             "
               onClick={toggleDark}
             >
-              <i className="fas fa-adjust"></i>
+              <i class="fa-solid fa-moon"></i>
             </a>
           </li>
         </ul>
