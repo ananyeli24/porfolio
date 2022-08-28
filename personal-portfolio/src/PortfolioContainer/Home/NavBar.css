@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    list-style-type: none;
+    background-color: #ffffff;
+  }
+  .navbutton {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: white 2px solid;
+    
+  }
+  .navbutton:hover{
+     border-radius: 8px;
+     border: orange 2px solid;
+    text-decoration: none;
+    
+  }
+  a:hover{
+    text-decoration: none;
+    color: inherit;  
+  }
+  
+  #logo {
+    width: 100%;
+    padding: 0 2.7rem;
+    margin-top: 8px ;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-toggle {
+    border: none;
+    font-size: 1.4rem;
+     background: #ffffff;
+  }
+  .navbar-display-none {
+    display: none;
+  }
+  .fa-bars {
+    display: none;
+  }
+ .dark-theme nav,
+ .dark-theme ul,
+ .dark-theme .navbutton,
+ .dark-theme .profile-container,
+ .dark-theme .wrapper,
+ .dark-theme .about-sub-container,
+ .dark-theme .projects-container,
+ .dark-theme .project-wrapper,
+ .dark-theme .contact-wrapper,
+ .dark-theme .contact-sub-container,
+ .dark-theme footer,
+.dark-theme {
+    background-color: rgba(0, 0, 0, 0.835);
+    color:#ffffff;
+    border: none;
+}
+.dark-theme .navbutton:hover{
+  border: orange 2px solid;
+}
+.dark-theme section {
+  background-color: rgba(0, 0, 0, 0.835);
+}
+.dark-theme #logo {
+  filter: none;
+}
+.dark-theme {
+  box-shadow: white;
+}
+.dark-theme .contact-wrapper:hover{
+  background-color: orange;
+}
+@media (max-width:600px) {
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  #logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  nav li {
+    text-align: right;
+  }
+  .navbar-display-none {
+    display: none;
+  }
+  .navbar-toggle {
+    display: inline-block;
+  }
+  .navbutton{
+ display: inline-block ;
+} 
+}

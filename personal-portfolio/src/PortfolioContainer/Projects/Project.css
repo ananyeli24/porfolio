@@ -1,0 +1,65 @@
+.projects-container{
+width: 100%;
+padding-top: 5rem;
+margin:  0;
+}
+.project-wrapper{
+    width: 90%; 
+    margin: 0;
+    padding: 3rem 0;
+    margin-left: 60px; 
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background-color:#FCB954;
+}
+.project-flex{
+display: flex;
+justify-content: space-around;
+}
+.project-wrapper:hover{
+    background-color:orange;
+}
+.project-wrapper h1{
+    margin-bottom: 2rem;
+    font-size: 52px;
+    font-weight: 600; 
+    text-align: center;
+}
+.project{
+    max-width: 21%;
+}
+.project img{
+    width: 100%;
+}
+.project-title{
+    text-align: center;
+}
+.tasktracker-container:hover{
+    transform: scale(1.1);
+}
+.hopehacks:hover{
+    transform: scale(1.1);
+}
+.ecommerce-container:hover{
+    transform: scale(1.1);
+}
+.redesign-container:hover{
+    transform: scale(1.1);
+}
+#project-button{
+    margin-left: 500px;
+   text-decoration: none;
+   background-color: white;
+   border:  2px solid;
+   border-radius: 8px;
+   font-weight: 600;
+   font-size: 15px;
+     padding: 10px 10px;
+     margin-top: 10px;
+}
+#project-button:hover{
+    border-radius: 8px;
+  border: orange 2px solid;
+ text-decoration: none;
+}

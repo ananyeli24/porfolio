@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+  }
+  li{
+     list-style-type: none; 
+     display: inline-flex;
+  }
+.profile-container{
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  font-family: 'Quicksand', sans-serif;
+}
+.hero-image > img{
+width: 100%;
+}
+.hero-text{
+width: 50%;
+padding-left: 40px;
+}
+.animate__backInLeft{
+  animation-duration: 2s;
+}
+.animate__backInRight{
+  animation-duration: 4s;
+}
+.animate__backInDown{
+  animation-duration: 5s;
+}
+
+.hero-image{
+    width: 50%;
+}
+#skills-line{
+  font-size: 20px;
+}
+#profile-button{
+  margin-left: 240px;
+  text-decoration: none;
+  background-color: white;
+  border:  2px solid;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+#profile-button:hover{
+  border-radius: 8px;
+  border: orange 2px solid;
+ text-decoration: none;
+}
+.profile-icons{
+display: inline-flex;
+gap: 30px;
+font-size: 50px;
+cursor: pointer;
+}
+#html{
+color: blue;
+}
+#html:hover{
+  transform: scale(1.2)
+}
+#css{
+  color:rgb(36, 180, 180);
+}
+#css:hover{
+  transform: scale(1.2)
+}
+#js{
+  color: #F7DF1E;
+}
+#js:hover{
+  transform: scale(1.2)
+}
+#react{
+  color:aqua;
+}
+#react:hover{
+  transform: scale(1.2)
+}
+#aws{
+  color: orange;
+}
+#aws:hover{
+  transform: scale(1.2)
+}
+#node{
+  color: green;
+}
+#node:hover{
+  transform: scale(1.2)
+}
+#sql{
+  font-size: 20px;
+}
+#sql:hover{
+  transform: scale(1.2)
+}
+.dark-theme #express{
+  filter: invert(1) ;
+}
+#express:hover{
+  transform: scale(1.2)
+}
+#mongo:hover{
+  transform: scale(1.2)
+}
+
+#java{
+  color: rgb(9, 9, 81);
+}
+#java:hover{
+  transform: scale(1.2)
+}
+#linked-in{
+  color: midnightblue;
+  margin-left: 190px;
+  font-size: 30px;
+}
+#linked-in:hover{
+  transform: scale(1.2);
+}
+#github{
+  margin-left: 40px;
+  font-size: 30px;
+}
+#github:hover{
+  transform: scale(1.2);
+}
+#email{
+  color:red;
+  margin-left: 40px;
+  font-size: 30px;
+}
+#email:hover{
+  transform: scale(1.2);
+}
+@media(max-width:700px){
+  .profile-container{
+    flex-flow: column wrap;
+  }
+  .hero-image{
+    width: 100%;
+  }
+}
