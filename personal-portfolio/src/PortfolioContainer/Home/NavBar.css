@@ -58,9 +58,6 @@
      background: #ffffff;
      display: none;
   }
-  /* .fa-bars {
-    display: none;
-  } */
  .dark-theme nav,
  .dark-theme ul,
  .dark-theme .navbutton,
@@ -92,7 +89,7 @@
 .dark-theme .contact-wrapper:hover{
   background-color: orange;
 }
-@media (max-width:768px) {
+@media (max-width:1000px) {
   nav {
     width: 100%;
     flex-direction: column;

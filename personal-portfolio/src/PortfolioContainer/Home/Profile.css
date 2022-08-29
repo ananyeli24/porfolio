@@ -9,7 +9,6 @@ html {
   padding-top: 5rem;
   display: flex;
   align-items: center;
-  flex-flow: row wrap;
   font-family: 'Quicksand', sans-serif;
 }
 .hero-image > img{
@@ -36,10 +35,12 @@ padding-left: 40px;
   font-size: 20px;
 }
 #profile-button{
-  margin-left: 240px;
+  margin: 0 auto;
+    text-align: center;
+    display: inline-block;
   text-decoration: none;
   background-color: white;
-  border:  2px solid;
+  border: 2px solid;
   border-radius: 8px;
   font-weight: 600;
   font-size: 15px;
@@ -53,9 +54,15 @@ padding-left: 40px;
 }
 .profile-icons{
 display: inline-flex;
-gap: 30px;
+gap: 20px;
 font-size: 50px;
 cursor: pointer;
+}
+
+.contact-icons{
+  display: flex;
+  font-size: 30px;
+  gap: 20px;
 }
 #html{
 color: blue;
@@ -94,7 +101,7 @@ color: blue;
   transform: scale(1.2)
 }
 #sql{
-  font-size: 20px;
+  width: 40px;
 }
 #sql:hover{
   transform: scale(1.2)
@@ -104,6 +111,12 @@ color: blue;
 }
 #express:hover{
   transform: scale(1.2)
+}
+#express{
+  width: 60px;
+}
+#mongo{
+  width: 80px;
 }
 #mongo:hover{
   transform: scale(1.2)
@@ -117,32 +130,61 @@ color: blue;
 }
 #linked-in{
   color: midnightblue;
-  margin-left: 190px;
-  font-size: 30px;
 }
 #linked-in:hover{
   transform: scale(1.2);
 }
-#github{
-  margin-left: 40px;
-  font-size: 30px;
-}
+
 #github:hover{
   transform: scale(1.2);
 }
 #email{
   color:red;
-  margin-left: 40px;
-  font-size: 30px;
 }
 #email:hover{
   transform: scale(1.2);
 }
 @media(max-width:700px){
-  .profile-container{
-    flex-flow: column wrap;
+  .profile-container{ 
+    display: flex;
+    align-items:flex-start;
   }
-  .hero-image{
-    width: 100%;
+  .hero-text{
+    width:50%;
+    }
+    .hero-text h1, h2{
+      font-size: 10px;
+    }
+    #skills-line{
+      font-size: 8px;
+    }
+    .hero-image{
+      width: 100%;
   }
+  .profile-icons{
+    margin: 0;
+    display: inline-flex;
+    gap: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    }
+    .contact-icons{
+      margin: 0;
+      font-size: 12px;
+      gap: 10px;
+      cursor: pointer;
+    }
+    #sql{
+      width: 12px;
+    }
+    #express{
+      width: 25px;
+    }
+    #mongo{
+      width: 30px; 
+    }
+    #profile-button{
+      font-size: 10px;
+    }
+    
 }
