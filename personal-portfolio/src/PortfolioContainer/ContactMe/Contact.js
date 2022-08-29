@@ -51,7 +51,7 @@ export const Contact = () => {
 
     <div>
       <label for="mail">Email * :</label>
-      <input type="email" className="inputs" placeholder="elvinb@gmail.com" name="email"/>
+      <input type="email" className="inputs" placeholder="elvinb@gmail.com" name="email" required/>
     </div>
 
     <div className="message-container">
